@@ -1,0 +1,34 @@
+.indicators {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.indicator {
+  width: 25px;
+  height: 2px;
+  margin: -40px 5px 0;
+
+  background-color: rgba($color-light, 0.4);
+  outline: none;
+
+  @include lg-min {
+    cursor: pointer;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.active {
+    background-color: $color-light;
+  }
+}
